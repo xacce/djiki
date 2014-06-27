@@ -32,7 +32,7 @@ class Revision(models.Model):
 
 
 class Page(models.Model, Versioned):
-	title = models.CharField(_("Title"), max_length=255, unique=True)
+	title = models.CharField(_("Title"), max_length=200, unique=True)
 
 	class Meta:
 		ordering = ('title',)
